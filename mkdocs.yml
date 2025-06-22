@@ -1,0 +1,53 @@
+site_name: Rainbox Documentation
+site_description: Documentation for the Rainbox syntax highlighting web service
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quick-start.md
+  - API Reference:
+    - Authentication: api/authentication.md
+    - Endpoints: api/endpoints.md
+  - User Guide:
+    - Languages: guide/languages.md
+    - Themes: guide/themes.md
+  - Development:
+    - Contributing: development/contributing.md
+    - Testing: development/testing.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+
+repo_name: Rainbox
+repo_url: https://github.com/yourusername/rainbox
